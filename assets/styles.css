@@ -3,14 +3,32 @@
 /* ... (Previous CSS content) ... */
 
 /* New Styles for Upcoming Events */
+ * {
+    font-family: 'Century Gothic',sans-serif;
+ }
+ body {
+    padding: 50px;
+ }
+ nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
 
+ }
+ nav li {
+    margin: 0 15px;
+ }
+li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
 .upcoming-events {
-    padding: 20px;
     background-color: #fff;
   }
   
   .upcoming-events h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     color: #333;
   }
