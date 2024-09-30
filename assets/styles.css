@@ -9,6 +9,32 @@
  body {
     padding: 50px;
  }
+
+ html,
+body {
+    height: 100%;
+}
+
+.container-fluid>.row {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    margin: 0%;
+}
+.container{
+    display: flex;
+    width: 70%;
+    height:80%;
+    margin: auto;
+    padding: 0px;
+    border-radius: 20px;
+}
+.container >.row {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    margin: 0%;
+}
  nav ul {
     display: flex;
     list-style: none;
@@ -22,6 +48,85 @@ li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+}
+.btn-login{
+  background-color: #4dc591;
+  color: white;
+  border-radius: 7px;
+  margin-left: 0px;
+  text-align: center;
+  width: 80%;
+}
+.btn-login{
+  margin-left: 0px;
+  text-align: center;
+  width: 80%;
+}
+.register-button {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.event-card:hover .register-button,
+.event-card:focus .register-button {
+  display: block;
+  opacity: 1;
+}
+
+.event-card .register-button.visible {
+  display: block;
+  opacity: 1;
+}
+
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+-webkit-box-shadow: 0 0 0 30px white inset !important;
+background-color: #fff !important;
+color: #000 !important; /* Ensuring the text color is consistent */
+}
+
+.custom-input {
+  border: none;
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
+  padding-left: 0px;
+  border-radius: 5px;
+  width: 70%;
+  box-sizing: border-box;
+  height: 20px;
+}
+
+.custom-input:focus {
+  outline: 0;
+  background-color: #fff;
+}
+.error{
+  font-size: 12px;
+}
+.form-control{
+  font-size: 11px !important;
+}
+fieldset {
+  border: 1px solid #f4f4f4;
+  border-radius: 10px; 
+  width: 80%; 
+  padding-left: 15px;
+  padding-bottom: 10px; 
+  padding-top: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+label{
+  font-size: 11px;
+  margin-bottom: 0px; 
+  color: #b4b3b8; 
 }
 .upcoming-events {
     background-color: #fff;
@@ -112,4 +217,7 @@ li a {
     transform: scale(1.02);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .intro {
+    height: 150px;
   }
